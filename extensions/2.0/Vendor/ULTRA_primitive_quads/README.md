@@ -1,7 +1,5 @@
 # ULTRA_primitive_quads
 
-
-
 ## Contributors
 
 - Josh Klint, Ultra Software, [@ultraengine](https://github.com/ultraengine)
@@ -27,14 +25,13 @@ Quads are requested by adding the `ULTRA_primitive_quads` extension to a primiti
             {
                 "attributes": {
                     "POSITION": 0,
-                    "NORMAL": 1,
-                    "_BATCHID": 2
+                    "NORMAL": 1
                 },
                 "indices": 3,
                 "material": 0,
                 "mode": 4,
                 "extensions": {
-                    "CESIUM_primitive_outline": {
+                    "ULTRA_primitive_quads": {
                         "indices": 4
                     }
                 }
@@ -44,28 +41,12 @@ Quads are requested by adding the `ULTRA_primitive_quads` extension to a primiti
 ]
 ```
 
-
-5.24.4. mesh.primitive.mode
-The topology type of primitives to render.
-
-Type: integer
-
-Required: No, default: 4
-
-Allowed values:
-0 POINTS
-1 LINES
-2 LINE_LOOP
-3 LINE_STRIP
-4 TRIANGLES
-5 TRIANGLE_STRIP
-6 TRIANGLE_FAN
-7 QUADS
-
 ## Implementation Notes
 
+This extension does not dictate any specific rendering technique for quad meshes. It only provides a mechanism to store meshes qith quad geometry.
 
+It is expected that in most implementations the number of quads will be half the number of triangles, and the accessor referenced in the extension will point to the same buffer as the triangle indices so that the indice array may be reused efficientaly, but these are not requirements. Implementations may reuse the triangle indice buffer or store a second buffer for quad indices.
 
 ## Justification
 
-Although not all mesh geometry can be represented by quads, quads with tessellation produce a more even distribution of polygons than triangle tessellation, for greater visual quality. Having the ability to store quad meshes in glTF format enhances our ability to deliver higher quality visuals.
+Although not all mesh geometry can be represented by quads, quads with tessellation produce a more even distribution of polygons than triangle tessellation, for greater visual quality. Having the ability to store quad meshes in glTF format enhances our ability to deliver greater visual acuity.
