@@ -59,12 +59,12 @@ If the indices property is not present, and the primitive has an indices accesso
 
 If the indices property is not present in the extension or in the primitive, then one quad should be created for every six vertices, and the number of vertices must be evenly divisible by six. The vertex indices to use in quad creation must match the following pattern:
 ```c++
-for (v = 0; v < vertex_count / 6; ++v)
+for (int v = 0; v < vertex_count / 6; ++v)
 {
-    i0 = v * 6 + 0;
-    i1 = v * 6 + 1;
-    i2 = v * 6 + 2;
-    i3 = v * 6 + 3;
+    int i0 = v * 6 + 0;
+    int i1 = v * 6 + 1;
+    int i2 = v * 6 + 2;
+    int i3 = v * 6 + 3;
 }
 ```
 
