@@ -69,6 +69,8 @@ It is expected that in most implementations the number of quads will be half the
 
 Although this extension enhances the ability of 3D renderers to display tessellated meshes and displacement mapping, tessellation and displacement features are outside the scope of this specification.
 
+This extension does not interfere with the loading of triangle geometry and provides backwards compatibility with all applications that support glTF 2.0.
+
 ## Justification
 
 Although not all mesh geometry can be represented by quads, quads with tessellation produce a more even distribution of polygons than triangle tessellation. Having the ability to store quad meshes in glTF format enhances our ability to deliver greater visual acuity of tessellated meshes.
