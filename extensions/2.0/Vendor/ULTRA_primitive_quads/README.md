@@ -46,7 +46,7 @@ Quads are requested by adding the `ULTRA_primitive_quads` extension to a primiti
 ## Properties
 
 | | Type | Description | Required |
-|---|---|---|
+|---|---|---|---|
 | indices | number | The index of the accessor to read quad indices from. | Yes. |
 
 ## Implementation Notes
