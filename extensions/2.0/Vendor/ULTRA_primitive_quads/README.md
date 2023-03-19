@@ -70,11 +70,7 @@ for (int v = 0; v < vertex_count / 6; ++v)
 
 ## Implementation Notes
 
-The count property of the accessor referenced by the indices property must be evenly divisible by four.
-
 This extension does not dictate any specific rendering technique for quad meshes. It only provides a mechanism to store meshes with quad geometry.
-
-It is expected that in most implementations the number of quads will be half the number of triangles, and the accessor referenced in the extension will point to the same buffer as the triangle indices so that the indice array may be reused efficientaly, but these are not requirements. Implementations may reuse the triangle indice buffer or store a second buffer for quad indices.
 
 Although this extension enhances the ability of 3D renderers to display tessellated meshes and displacement mapping, tessellation and displacement features are outside the scope of this specification.
 
