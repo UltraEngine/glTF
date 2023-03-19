@@ -63,4 +63,4 @@ Although this extension enhances the ability of 3D renderers to display tessella
 
 Although not all mesh geometry can be represented by quads, quads with tessellation produce a more even distribution of polygons than triangle tessellation. Having the ability to store quad meshes in glTF format enhances our ability to deliver greater visual acuity of tessellated meshes.
 
-This extension also allows 3D modeling program to save and load quad meshes without any loss of data.
+This extension also allows 3D modeling programs to save and load meshes without losing quad mesh topology.
