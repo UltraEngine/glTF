@@ -14,6 +14,8 @@ Written against the glTF 2.0 spec.
 
 ## Overview
 
+Although used less often than triangle meshes, 3D models made up of quad four-sided primtives provide excellent iterative tessellation. Quad geometry can be evaluated in screen-space more effictively than triangles to provide a more uniform distribution of tessellated vertices. 
+
 ## Extending Primitives
 
 Quads are requested by adding the `ULTRA_primitive_quads` extension to a primitive rendered with `"mode": 4`, `TRIANGLES`.
@@ -40,6 +42,12 @@ Quads are requested by adding the `ULTRA_primitive_quads` extension to a primiti
     }
 ]
 ```
+
+## Properties
+
+| | Type | Description | Required |
+|---|---|---|
+| indices | number | The index of the accessor to read quad indices from. | Yes. |
 
 ## Implementation Notes
 
