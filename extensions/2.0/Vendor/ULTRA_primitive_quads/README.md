@@ -51,7 +51,7 @@ Quads are requested by adding the `ULTRA_primitive_quads` extension to a primiti
 
 ## Implementation Notes
 
-This extension does not dictate any specific rendering technique for quad meshes. It only provides a mechanism to store meshes qith quad geometry.
+This extension does not dictate any specific rendering technique for quad meshes. It only provides a mechanism to store meshes with quad geometry.
 
 It is expected that in most implementations the number of quads will be half the number of triangles, and the accessor referenced in the extension will point to the same buffer as the triangle indices so that the indice array may be reused efficientaly, but these are not requirements. Implementations may reuse the triangle indice buffer or store a second buffer for quad indices.
 
