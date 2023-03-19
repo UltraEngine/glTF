@@ -2,7 +2,7 @@
 
 ![](figures/tess_compare.png)
 
-**Quad meshes (right) provide more consistent distribution of geometry than triangle meshes (left) when hardware tessellation is used.**
+**Quad meshes (right) provide a more uniform distribution of vertices than triangle meshes (left) when hardware tessellation is used.**
 
 ## Contributors
 
