@@ -51,7 +51,13 @@ Quads are requested by adding the `ULTRA_primitive_quads` extension to a primiti
 
 | | Type | Description | Required |
 |---|---|---|---|
-| indices | number | The index of the accessor to read quad indices from. | Yes. |
+| indices | number | The index of the accessor to read quad indices from. | No. |
+
+If the indices property is present, it will be used as the index of an accessor from which quad indices will be read, and the accessor count must be evenly divisible by four.
+
+If the indices property is not present, and the primitives object has an indices accessor, then the first four of every six indices should be used to add a quad primitive to the mesh, instead of creating triangles. In this case, the accessor count must be evenly divisible by six.
+
+If the indices property is not present in the extension or in the primitive object, then one quad should be created for every four vertices, in order, and the number of vertices must be evenly divisible by four.
 
 ## Implementation Notes
 
