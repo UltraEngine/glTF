@@ -33,12 +33,12 @@ Quads are requested by adding the `ULTRA_primitive_quads` extension to a primiti
                     "POSITION": 0,
                     "NORMAL": 1
                 },
-                "indices": 0,
+                "indices": 2,
                 "material": 0,
                 "mode": 4,
                 "extensions": {
                     "ULTRA_primitive_quads": {
-                        "indices": 1
+                        "indices": 3
                     }
                 }
             }
