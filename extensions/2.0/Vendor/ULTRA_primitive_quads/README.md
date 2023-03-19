@@ -55,6 +55,8 @@ This extension does not dictate any specific rendering technique for quad meshes
 
 It is expected that in most implementations the number of quads will be half the number of triangles, and the accessor referenced in the extension will point to the same buffer as the triangle indices so that the indice array may be reused efficientaly, but these are not requirements. Implementations may reuse the triangle indice buffer or store a second buffer for quad indices.
 
+Although this extension enhances the ability of 3D renderers to display tessellated meshes, tessellation features are not within the scope of this specification.
+
 ## Justification
 
 Although not all mesh geometry can be represented by quads, quads with tessellation produce a more even distribution of polygons than triangle tessellation. Having the ability to store quad meshes in glTF format enhances our ability to deliver greater visual acuity of tessellated meshes.
