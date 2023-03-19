@@ -51,7 +51,7 @@ Quads are requested by adding the `ULTRA_primitive_quads` extension to a primiti
 
 ## Implementation Notes
 
-The count property of the accessor reference by this extension must be evenly divisible by four.
+The count property of the accessor referenced by the indices property must be evenly divisible by four.
 
 This extension does not dictate any specific rendering technique for quad meshes. It only provides a mechanism to store meshes with quad geometry.
 
