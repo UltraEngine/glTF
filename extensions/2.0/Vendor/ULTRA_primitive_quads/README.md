@@ -1,5 +1,9 @@
 # ULTRA_primitive_quads
 
+![](figures/tess_compare.png)
+
+**Quad meshes (right) provide more consistent distribution of geometry than triangle meshes (left) when hardware tessellation is used.**
+
 ## Contributors
 
 - Josh Klint, Ultra Software, [@ultraengine](https://github.com/ultraengine)
