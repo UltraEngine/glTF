@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "ULTRA_primitive_quads glTF primitive extension",
+    "type": "object",
+    "description": "glTF extension for storing quad meshes.",
+    "allOf": [ { "$ref": "glTFProperty.schema.json" } ],
+    "properties": {
+        "indices": {
+            "type": "integer",
+            "description": "The index of the accessor providing the list of indices for primitive's quads."
+        },
+        "extensions": { },
+        "extras": { }
+    }
+}
