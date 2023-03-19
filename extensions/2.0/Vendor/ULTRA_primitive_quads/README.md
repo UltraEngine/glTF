@@ -18,7 +18,7 @@ Written against the glTF 2.0 spec.
 
 ## Overview
 
-Although used less often than triangle meshes, 3D models made up of quad four-sided primtives provide excellent iterative tessellation. Quad geometry can be evaluated in screen-space more effictively than triangles to provide a more uniform distribution of tessellated vertices, resulting in more accurate display of 3D geometry.
+Although they are less common than triangle meshes, 3D models made up of quad four-sided primtives provide excellent iterative tessellation. Quad geometry can be evaluated in screen-space more effictively than triangles to provide a more uniform distribution of tessellated vertices, resulting in more accurate display of 3D geometry.
 
 ## Extending Primitives
 
