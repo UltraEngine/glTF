@@ -49,4 +49,4 @@ It is expected that in most implementations the number of quads will be half the
 
 ## Justification
 
-Although not all mesh geometry can be represented by quads, quads with tessellation produce a more even distribution of polygons than triangle tessellation, for greater visual quality. Having the ability to store quad meshes in glTF format enhances our ability to deliver greater visual acuity.
+Although not all mesh geometry can be represented by quads, quads with tessellation produce a more even distribution of polygons than triangle tessellation. Having the ability to store quad meshes in glTF format enhances our ability to deliver greater visual acuity of tessellated meshes.
